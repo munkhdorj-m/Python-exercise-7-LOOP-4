@@ -61,9 +61,9 @@ Check if a given number is prime number or not.
  
   	Input: 41
   	Output: True
-
-   	Input: 1
-    	Output: False
+   
+  	Input: 1
+  	Output: False
      
 ---
 
