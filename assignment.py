@@ -1,16 +1,16 @@
 # You can remove 'pass' if you written code in the function 
 
 # Exercise 1
-def nth_power(base, exponent):
+def find_highest_digit(num):
     # Write your code here
     pass
 
 # Exercise 2
-def reverse_number(num):
+def repeat_number(num):
     # Write your code here
     pass
 
 # Exercise 3
-def binary_to_decimal(binary_num):
+def is_prime_number(num):
     # Write your code here
     pass
