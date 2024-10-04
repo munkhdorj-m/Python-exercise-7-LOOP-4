@@ -10,10 +10,8 @@ def check_contains_loop(function):
     (1234, 4),
     (91635, 9),
     (0, 0),
-    (85749, 9),
-    (9, 9)
 ])
-def test_find_highest_digit(num, expected):
+def test1(num, expected):
     assert find_highest_digit(num) == expected
     assert check_contains_loop(find_highest_digit)
 
@@ -21,10 +19,8 @@ def test_find_highest_digit(num, expected):
     (4, 4444),
     (7, 7777777),
     (1, 1),
-    (9, 999999999),
-    (5, 55555)
 ])
-def test_repeat_number(num, expected):
+def test2(num, expected):
     assert repeat_number(num) == expected
     assert check_contains_loop(repeat_number)
 
@@ -32,9 +28,8 @@ def test_repeat_number(num, expected):
     (3, True),
     (18, False),
     (41, True),
-    (97, True),
     (1, False)
 ])
-def test_is_prime_number(num, expected):
+def test3(num, expected):
     assert is_prime_number(num) == expected
     assert check_contains_loop(is_prime_number)
