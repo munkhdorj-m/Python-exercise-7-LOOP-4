@@ -10,19 +10,18 @@ Python Loops PPT:
 
 **Problem:**
 
-Find nth power of a given number.
+Find highest digit of a given number.
 
 **Example:**
-3 to the power of 4 is 3^4=81
 
-	Input: 3 4
-	Output: 81
+	Input: 1234
+	Output: 4
  
- 	Input: 5 2
-	Output: 25
+ 	Input: 91635
+	Output: 9
  
-  	Input: 10 5
-	Output: 10000
+  	Input: 0
+	Output: 0
 
 ---
 
@@ -30,15 +29,15 @@ Find nth power of a given number.
 
 **Problem:**
 
-Find reverse of a given number.
+Print the given number with the equal number of digits.
 
 **Example:**
 
-	Input: 1234
-	Output: 4321
+	Input: 4
+	Output: 4444
  
- 	Input: 19283
-	Output: 38291
+ 	Input: 7
+	Output: 7777777
  
   	Input: 1
 	Output: 1
@@ -50,17 +49,17 @@ Find reverse of a given number.
 
 **Problem:**
 
-Convert given binary number to decimal number.
+Check if a given number is prime number or not.
 
 **Example**
 
- 	Input: 1010
-  	Output: 10
+ 	Input: 3
+  	Output: True
  
-  	Input: 110111
-  	Output: 55
+  	Input: 18
+  	Output: False
  
-  	Input: 11111111
-  	Output: 255
+  	Input: 41
+  	Output: True
 ---
 
