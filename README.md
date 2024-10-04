@@ -64,5 +64,6 @@ Check if a given number is prime number or not.
 
    	Input: 1
     	Output: False
+     
 ---
 
