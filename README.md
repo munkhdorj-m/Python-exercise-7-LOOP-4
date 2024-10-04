@@ -29,7 +29,7 @@ Find highest digit of a given number.
 
 **Problem:**
 
-Print the given number with the equal number of digits.
+Return the given number with the same number of digits.
 
 **Example:**
 
