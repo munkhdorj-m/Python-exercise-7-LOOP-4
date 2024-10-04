@@ -1,40 +1,40 @@
 import pytest
 import inspect
-from assignment import nth_power, reverse_number, binary_to_decimal
+from assignment import find_highest_digit, repeat_number, is_prime_number
 
 def check_contains_loop(function):
     source = inspect.getsource(function)
     return 'for' in source or 'while' in source
 
-@pytest.mark.parametrize("base, exponent, expected", [
-    (3, 4, 81),
-    (5, 2, 25),
-    (10, 5, 100000),
-    (2, 10, 1024),
-    (7, 0, 1)
+@pytest.mark.parametrize("num, expected", [
+    (1234, 4),
+    (91635, 9),
+    (0, 0),
+    (85749, 9),
+    (9, 9)
 ])
-def test1(base, exponent, expected):
-    assert nth_power(base, exponent) == expected
-    assert check_contains_loop(nth_power)
+def test_find_highest_digit(num, expected):
+    assert find_highest_digit(num) == expected
+    assert check_contains_loop(find_highest_digit)
 
-@pytest.mark.parametrize("input, expected", [
-    (1234, 4321),
-    (19283, 38291),
+@pytest.mark.parametrize("num, expected", [
+    (4, 4444),
+    (7, 7777777),
     (1, 1),
-    (987654, 456789),
-    (0, 0)
+    (9, 999999999),
+    (5, 55555)
 ])
-def test2(input, expected):
-    assert reverse_number(input) == expected
-    assert check_contains_loop(reverse_number)
+def test_repeat_number(num, expected):
+    assert repeat_number(num) == expected
+    assert check_contains_loop(repeat_number)
 
-@pytest.mark.parametrize("binary_input, expected", [
-    (1010, 10),
-    (110111, 55),
-    (11111111, 255),
-    (100000, 32),
-    (0, 0)
+@pytest.mark.parametrize("num, expected", [
+    (3, True),
+    (18, False),
+    (41, True),
+    (97, True),
+    (1, False)
 ])
-def test3(binary_input, expected):
-    assert binary_to_decimal(binary_input) == expected
-    assert check_contains_loop(binary_to_decimal)  
+def test_is_prime_number(num, expected):
+    assert is_prime_number(num) == expected
+    assert check_contains_loop(is_prime_number)
